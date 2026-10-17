@@ -1,0 +1,8 @@
+{
+  "name": "Remix LMS SMKN 1 Sidayu",
+  "description": "Learning Management System (LMS) SMKN 1 Sidayu berbasis web",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

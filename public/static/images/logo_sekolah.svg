@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 270" width="100%" height="100%">
+  <!-- Perisai Luar -->
+  <defs>
+    <path id="textArcTop" d="M 32,58 Q 100,26 168,58" fill="none" />
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A5AAAF" />
+      <stop offset="100%" stop-color="#91969B" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E69818" />
+      <stop offset="100%" stop-color="#F7BA2D" />
+    </linearGradient>
+    <linearGradient id="anchorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64B5F6" />
+      <stop offset="100%" stop-color="#42A5F5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Bentuk Perisai -->
+  <path d="M 22,46 Q 100,16 178,46 L 178,168 Q 178,228 100,258 Q 22,228 22,168 Z" 
+        fill="url(#shieldGrad)" stroke="#8B263E" stroke-width="3.5" stroke-linejoin="round" />
+
+  <!-- Tulisan Atas -->
+  <path d="M 28,48 Q 100,20 172,48" fill="none" id="curve1" />
+  <text font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="13" fill="#111111" text-anchor="middle">
+    <textPath href="#curve1" startOffset="50%">SMKN 1 SIDAYU</textPath>
+  </text>
+  <text x="100" y="58" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="11" fill="#111111" text-anchor="middle">
+    GRESIK
+  </text>
+
+  <!-- Area Fajar Matahari & Roda Gigi -->
+  <path d="M 25,72 Q 100,56 175,72 L 175,108 Q 100,90 25,108 Z" fill="url(#sunGrad)" />
+
+  <!-- Roda Gigi Biru Navy (Teknologi Mesin) -->
+  <g fill="#1A237E" stroke="#101755" stroke-width="0.8">
+    <circle cx="100" cy="100" r="42" />
+    <!-- Gigi Roda -->
+    <rect x="94" y="52" width="12" height="10" rx="1.5" />
+    <rect x="94" y="52" width="12" height="10" rx="1.5" transform="rotate(25 100 100)" />
+    <rect x="94" y="52" width="12" height="10" rx="1.5" transform="rotate(50 100 100)" />
+    <rect x="94" y="52" width="12" height="10" rx="1.5" transform="rotate(75 100 100)" />
+    <rect x="94" y="52" width="12" height="10" rx="1.5" transform="rotate(-25 100 100)" />
+    <rect x="94" y="52" width="12" height="10" rx="1.5" transform="rotate(-50 100 100)" />
+    <rect x="94" y="52" width="12" height="10" rx="1.5" transform="rotate(-75 100 100)" />
+  </g>
+  <!-- Lingkaran dalam roda gigi -->
+  <circle cx="100" cy="100" r="28" fill="#F5B025" />
+
+  <!-- Garis Gelombang Hijau (Kelautan & Lingkungan Maritim) -->
+  <g fill="none" stroke="#1E8449" stroke-width="2.6" stroke-linecap="round">
+    <path d="M 24,96 Q 42,86 60,96 T 96,96 T 132,96 T 176,96" />
+    <path d="M 24,103 Q 42,93 60,103 T 96,103 T 132,103 T 176,103" />
+    <path d="M 24,110 Q 42,100 60,110 T 96,110 T 132,110 T 176,110" />
+    <path d="M 24,117 Q 42,107 60,117 T 96,117 T 132,117 T 176,117" />
+  </g>
+
+  <!-- Dua Ikan Emas di Kiri dan Kanan -->
+  <!-- Ikan Kiri -->
+  <g transform="translate(32, 118) scale(0.65)" fill="#F59E0B" stroke="#D97706" stroke-width="1.2">
+    <ellipse cx="14" cy="24" rx="9" ry="18" transform="rotate(-15 14 24)" />
+    <polygon points="12,40 6,48 18,48" />
+    <circle cx="16" cy="12" r="2" fill="#111" />
+  </g>
+  <!-- Ikan Kanan -->
+  <g transform="translate(150, 118) scale(0.65)" fill="#F59E0B" stroke="#D97706" stroke-width="1.2">
+    <ellipse cx="14" cy="24" rx="9" ry="18" transform="rotate(15 14 24)" />
+    <polygon points="16,40 10,48 22,48" />
+    <circle cx="12" cy="12" r="2" fill="#111" />
+  </g>
+
+  <!-- Jangkar Bahari Biru Cyan (Maritim / Perkapalan) -->
+  <g fill="url(#anchorGrad)" stroke="#1E88E5" stroke-width="1.5" stroke-linejoin="round">
+    <!-- Tiang Tengah Jangkar -->
+    <rect x="94" y="98" width="12" height="120" rx="3" />
+    <!-- Cincin Atas -->
+    <circle cx="100" cy="100" r="16" fill="none" stroke="url(#anchorGrad)" stroke-width="6" />
+    <!-- Palang Mendatar -->
+    <rect x="76" y="128" width="48" height="8" rx="2" />
+    <!-- Lengkung Jangkar Bawah -->
+    <path d="M 44,180 Q 100,248 156,180 L 164,194 Q 100,268 36,194 Z" />
+    <!-- Kait Kiri & Kanan -->
+    <polygon points="44,180 34,164 56,168" />
+    <polygon points="156,180 166,164 144,168" />
+  </g>
+
+  <!-- Jangka Hitam / Compass Divider (Teknik, Arsitektur, Ketelitian) -->
+  <g fill="#18181B" stroke="#09090B" stroke-width="1.2">
+    <!-- Kepala Engsel Jangka -->
+    <circle cx="100" cy="98" r="13" />
+    <circle cx="100" cy="98" r="7" fill="#E4E4E7" />
+    <circle cx="100" cy="98" r="3" fill="#18181B" />
+    <!-- Kaki Kiri -->
+    <polygon points="94,106 100,106 58,212 52,210" />
+    <!-- Kaki Kanan -->
+    <polygon points="100,106 106,106 148,210 142,212" />
+  </g>
+
+  <!-- 5 Komputer Desktop Berjajar di Bawah (Teknologi Informasi & 5 Sila) -->
+  <!-- Komputer 1 (Kiri Luar) -->
+  <g transform="translate(54, 208) scale(0.68)">
+    <rect x="0" y="0" width="22" height="17" rx="1.5" fill="#E2E8F0" stroke="#475569" stroke-width="1.2" />
+    <rect x="2" y="2" width="18" height="13" fill="#60A5FA" />
+    <rect x="9" y="17" width="4" height="4" fill="#94A3B8" />
+    <rect x="5" y="21" width="12" height="2" rx="0.5" fill="#475569" />
+  </g>
+
+  <!-- Komputer 2 (Kiri Tengah) -->
+  <g transform="translate(72, 218) scale(0.68)">
+    <rect x="0" y="0" width="22" height="17" rx="1.5" fill="#E2E8F0" stroke="#475569" stroke-width="1.2" />
+    <rect x="2" y="2" width="18" height="13" fill="#60A5FA" />
+    <rect x="9" y="17" width="4" height="4" fill="#94A3B8" />
+    <rect x="5" y="21" width="12" height="2" rx="0.5" fill="#475569" />
+  </g>
+
+  <!-- Komputer 3 (Tengah) -->
+  <g transform="translate(93, 226) scale(0.68)">
+    <rect x="0" y="0" width="22" height="17" rx="1.5" fill="#E2E8F0" stroke="#475569" stroke-width="1.2" />
+    <rect x="2" y="2" width="18" height="13" fill="#60A5FA" />
+    <rect x="9" y="17" width="4" height="4" fill="#94A3B8" />
+    <rect x="5" y="21" width="12" height="2" rx="0.5" fill="#475569" />
+  </g>
+
+  <!-- Komputer 4 (Kanan Tengah) -->
+  <g transform="translate(114, 218) scale(0.68)">
+    <rect x="0" y="0" width="22" height="17" rx="1.5" fill="#E2E8F0" stroke="#475569" stroke-width="1.2" />
+    <rect x="2" y="2" width="18" height="13" fill="#60A5FA" />
+    <rect x="9" y="17" width="4" height="4" fill="#94A3B8" />
+    <rect x="5" y="21" width="12" height="2" rx="0.5" fill="#475569" />
+  </g>
+
+  <!-- Komputer 5 (Kanan Luar) -->
+  <g transform="translate(132, 208) scale(0.68)">
+    <rect x="0" y="0" width="22" height="17" rx="1.5" fill="#E2E8F0" stroke="#475569" stroke-width="1.2" />
+    <rect x="2" y="2" width="18" height="13" fill="#60A5FA" />
+    <rect x="9" y="17" width="4" height="4" fill="#94A3B8" />
+    <rect x="5" y="21" width="12" height="2" rx="0.5" fill="#475569" />
+  </g>
+</svg>
